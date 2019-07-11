@@ -10,23 +10,24 @@
         background: skyblue;
         cursor: pointer;
       }
+      .disable {
+       display: none;
+   }
     </style>
     <meta name="description" content="suwa3のHOMEです">
     </head>
-    <body>
-      <div id="target" class="box">
-      </div>
+  <body>
+     <div id="target" class="box"></div>
+     <img id="rabbit" src="./img/usagi.png" class="box"></img>
 
+     <script>
+       'use strict';
+       document.getElementById('rabbit').classList.add('disable');
 
-      <script>
-        'use strict';
-
-
-        document.getElementById('target').addEventListener('click', function(){
-          document.getElementById('target').style.background = 'pink'
-
-
-        });
-      </script>
-    </body>
+       document.getElementById('target').addEventListener('click', function(){
+           document.getElementById('target').classList.add('disable');
+           document.getElementById('rabbit').classList.remove('disable');
+       });
+     </script>
+   </body>
   </html>
