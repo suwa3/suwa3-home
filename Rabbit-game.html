@@ -9,24 +9,35 @@
         height: 100px;
         background: skyblue;
         cursor: pointer;
+        transition: 0.8s;
       }
-      .disable {
+      <!-- .disable {
        display: none;
-   }
+      } -->
+      .circle {
+        background-image: url("./img/usagi.png");
+        background-size: 100px;
+        border-radius: 50%;
+        transform: rotate(360deg);
+      }
     </style>
-    <meta name="description" content="suwa3のHOMEです">
+
     </head>
   <body>
      <div id="target" class="box"></div>
-     <img id="rabbit" src="./img/usagi.png" class="box"></img>
+     <!-- <img id="rabbit" src="./img/usagi.png" class="box"></img> -->
 
      <script>
        'use strict';
-       document.getElementById('rabbit').classList.add('disable');
+       // document.getElementById('rabbit').classList.add('disable');
 
        document.getElementById('target').addEventListener('click', function(){
-           document.getElementById('target').classList.add('disable');
-           document.getElementById('rabbit').classList.remove('disable');
+           document.getElementById('target').classList.add('circle');
+           // document.getElementById('rabbit').classList.remove('disable');
+           // document.getElementById('rabbit').style.borderRadius = '50%';
+           // document.getElementById('rabbit').classList.add('circle');
+
+
        });
      </script>
    </body>
