@@ -28,13 +28,16 @@
         transform: rotate(360deg);
       }
       .lose {
-      transform: scale(0.9);
+        background-image: url("./img/yagi.png");
+        background-size: 100px;
+        border-radius: 50%;
+        transform: scale(0.9);
       }
     </style>
 
     </head>
   <body>
-     <div id="target" class="box"></div>
+     <!-- <div id="target" class="box"></div> -->
      <!-- <img id="rabbit" src="./img/usagi.png" class="box"></img> -->
 
      <script>
@@ -42,7 +45,7 @@
        const num = 5;
        const winner = Math.floor(Math.random() * num); // 0 - 4
 
-       for (let i = 0; i < num; i++) {
+      for (let i = 0; i < num; i++) {
        const div = document.createElement('div');
            div.classList.add('box');
            if (i === winner) {
@@ -58,7 +61,7 @@
                div.textContent = 'やぎ';
                div.classList.add('lose');
              }
-             div.classList.toggle('circle');
+             // div.classList.toggle('circle')
            });
 
            document.body.appendChild(div);
