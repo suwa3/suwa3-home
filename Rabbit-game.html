@@ -4,21 +4,31 @@
     <title>Rabbit-game</title>
     <!-- <link rel="icon" href="suwa3.ico"> -->
     <style>
+      body {
+        display: flex;
+        flex-wrap: wrap;
+      }
       .box {
         width: 100px;
         height: 100px;
         background: skyblue;
         cursor: pointer;
         transition: 0.8s;
+        margin: 0 8px 8px 0;
+        text-align: center;
+        line-height: 100px;
       }
       <!-- .disable {
        display: none;
       } -->
-      .circle {
+      .win {
         background-image: url("./img/usagi.png");
         background-size: 100px;
         border-radius: 50%;
         transform: rotate(360deg);
+      }
+      .lose {
+      transform: scale(0.9);
       }
     </style>
 
@@ -29,16 +39,42 @@
 
      <script>
        'use strict';
-       // document.getElementById('rabbit').classList.add('disable');
+       const num = 5;
+       const winner = Math.floor(Math.random() * num); // 0 - 4
 
-       document.getElementById('target').addEventListener('click', function(){
-           document.getElementById('target').classList.add('circle');
-           // document.getElementById('rabbit').classList.remove('disable');
-           // document.getElementById('rabbit').style.borderRadius = '50%';
-           // document.getElementById('rabbit').classList.add('circle');
+       for (let i = 0; i < num; i++) {
+       const div = document.createElement('div');
+           div.classList.add('box');
+           if (i === winner) {
+             div.dataset.result = 'win';
+            } else {
+             div.dataset.result = 'lose';
+            }
+           div.addEventListener('click', function() {
+             if (div.dataset.result === 'win') {
+               div.textContent = 'うさぎ';
+               div.classList.add('win');
+             } else {
+               div.textContent = 'やぎ';
+               div.classList.add('lose');
+             }
+             div.classList.toggle('circle');
+           });
+
+           document.body.appendChild(div);
+
+         }
+       // 'use strict';
+                  // document.getElementById('rabbit').classList.add('disable');
+       // const target = document.getElementById('target');
+        // target.addEventListener('click', function(){
+         // target.classList.add('circle');
+                  // document.getElementById('rabbit').classList.remove('disable');
+                  // document.getElementById('rabbit').style.borderRadius = '50%';
+                  // document.getElementById('rabbit').classList.add('circle');
 
 
-       });
+       // });
      </script>
    </body>
   </html>
