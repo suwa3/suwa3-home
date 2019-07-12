@@ -6,8 +6,17 @@
     <style>
       body {
         display: flex;
-        flex-wrap: wrap;
+        <!-- flex-wrap: wrap; -->
       }
+.game {
+  <!-- position: absolute; -->
+  <!-- top: 0px; -->
+  <!-- right: 0px; -->
+  <!-- bottom: 0px; -->
+  left: 0px;
+  margin: auto;
+  }
+
       .box {
         width: 100px;
         height: 100px;
@@ -39,45 +48,50 @@
   <body>
      <!-- <div id="target" class="box"></div> -->
      <!-- <img id="rabbit" src="./img/usagi.png" class="box"></img> -->
+<div class="game">
 
-     <script>
-       'use strict';
-       const num = 5;
-       const winner = Math.floor(Math.random() * num); // 0 - 4
+  <script>
+    'use strict';
 
-      for (let i = 0; i < num; i++) {
-       const div = document.createElement('div');
-           div.classList.add('box');
-           if (i === winner) {
-             div.dataset.result = 'win';
-            } else {
-             div.dataset.result = 'lose';
-            }
-           div.addEventListener('click', function() {
-             if (div.dataset.result === 'win') {
-               div.textContent = 'うさぎ';
-               div.classList.add('win');
-             } else {
-               div.textContent = 'やぎ';
-               div.classList.add('lose');
-             }
-             // div.classList.toggle('circle')
-           });
+    const num = 5;
+    const winner = Math.floor(Math.random() * num); // 0 - 4
 
-           document.body.appendChild(div);
+    for (let i = 0; i < num; i++) {
+      const div = document.createElement('div');
+      div.classList.add('box');
+      if (i === winner) {
+        div.dataset.result = 'win';
+      } else {
+        div.dataset.result = 'lose';
+      }
+      div.addEventListener('click', function() {
+        if (div.dataset.result === 'win') {
+          div.textContent = 'うさぎ';
+          div.classList.add('win');
+        } else {
+          div.textContent = 'やぎ';
+          div.classList.add('lose');
+        }
+        // div.classList.toggle('circle')
+      });
 
-         }
-       // 'use strict';
-                  // document.getElementById('rabbit').classList.add('disable');
-       // const target = document.getElementById('target');
-        // target.addEventListener('click', function(){
-         // target.classList.add('circle');
-                  // document.getElementById('rabbit').classList.remove('disable');
-                  // document.getElementById('rabbit').style.borderRadius = '50%';
-                  // document.getElementById('rabbit').classList.add('circle');
+      const game = document.querySelector('.game')
+
+      game.appendChild(div);
+
+    }
+    // 'use strict';
+    // document.getElementById('rabbit').classList.add('disable');
+    // const target = document.getElementById('target');
+    // target.addEventListener('click', function(){
+      // target.classList.add('circle');
+      // document.getElementById('rabbit').classList.remove('disable');
+      // document.getElementById('rabbit').style.borderRadius = '50%';
+      // document.getElementById('rabbit').classList.add('circle');
 
 
-       // });
-     </script>
+      // });
+    </script>
+</div>
    </body>
   </html>
