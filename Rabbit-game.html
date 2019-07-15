@@ -73,6 +73,7 @@
           div.dataset.result = 'lose';
         }
         div.addEventListener('click', function() {
+          if (!div.classList.contains('already')) {
           if (div.dataset.result === 'win') {
             div.textContent = 'うさぎ';
             div.classList.add('win');
@@ -82,10 +83,12 @@
             div.classList.add('lose');
             point -= 1;
           }
-          localStorage.setItem('point', point)
+          localStorage.setItem('point', point);
 
+          div.classList.add('already');
           pointTag.textContent = point;
-
+        }
+        
         });
 
         const game = document.querySelector('.game')
