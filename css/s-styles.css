@@ -1,3 +1,12 @@
+#pc-page {
+    display: none;
+}
+
+#sp-page {
+    display: block;
+}
+
+
 body {
   background-color: #e9eff5;
   font-family: Helvetica, sans-serif;
