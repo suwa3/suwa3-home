@@ -55,9 +55,11 @@
     <script>
       'use strict';
 
-      let point = 0
+      let point = parseInt(localStorage.getItem('point')) || 0;
       const pointTag = document.querySelector('#point');
       pointTag.textContent = point;
+
+
 
       const num = 5;
       const winner = Math.floor(Math.random() * num); // 0 - 4
@@ -80,6 +82,8 @@
             div.classList.add('lose');
             point -= 1;
           }
+          localStorage.setItem('point', point)
+
           pointTag.textContent = point;
 
         });
@@ -105,6 +109,6 @@
       // });  -->
 
     </script>
-
+<button onclick="localStorage.removeItem('point'); point=0;pointTag.textContent = point;">Reset</button>
   </body>
 </html>
