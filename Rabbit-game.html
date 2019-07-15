@@ -2,20 +2,14 @@
   <head>
     <meta charset="utf-8">
     <title>Rabbit-game</title>
-    <!-- <link rel="icon" href="suwa3.ico"> -->
     <style>
       body {
         display: flex;
-        <!-- flex-wrap: wrap; -->
       }
-.game {
-  <!-- position: absolute; -->
-  <!-- top: 0px; -->
-  <!-- right: 0px; -->
-  <!-- bottom: 0px; -->
-  left: 0px;
-  margin: auto;
-  }
+      .game {
+      left: 0px;
+      margin: auto;
+      }
 
       .box {
         width: 100px;
@@ -27,9 +21,6 @@
         text-align: center;
         line-height: 100px;
       }
-      <!-- .disable {
-       display: none;
-      } -->
       .win {
         background-image: url("./img/usagi.png");
         background-size: 100px;
@@ -45,12 +36,10 @@
     </style>
 
     </head>
-  <body>
-     <!-- <div id="target" class="box"></div> -->
-     <!-- <img id="rabbit" src="./img/usagi.png" class="box"></img> -->
-<div class="game">
+    <body>
+      <div class="game">
 
-  <script>
+        <script>
     'use strict';
 
     const num = 5;
@@ -72,7 +61,7 @@
           div.textContent = 'やぎ';
           div.classList.add('lose');
         }
-        // div.classList.toggle('circle')
+
       });
 
       const game = document.querySelector('.game')
@@ -80,18 +69,8 @@
       game.appendChild(div);
 
     }
-    // 'use strict';
-    // document.getElementById('rabbit').classList.add('disable');
-    // const target = document.getElementById('target');
-    // target.addEventListener('click', function(){
-      // target.classList.add('circle');
-      // document.getElementById('rabbit').classList.remove('disable');
-      // document.getElementById('rabbit').style.borderRadius = '50%';
-      // document.getElementById('rabbit').classList.add('circle');
+      </script>
 
-
-      // });
-    </script>
-</div>
-   </body>
-  </html>
+    </div>
+  </body>
+</html>
