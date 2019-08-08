@@ -86,10 +86,10 @@ p {
 }
 
 .rabbit {
-  border-radius: 50px;
+  /* border-radius: 50px; */
   position: absolute;
-  top: 24%;
-  left: 22%;
+  top: 30%;
+  left: 20%;
   /* height: 33%; */
   width: 30%;
   z-index: 30;
