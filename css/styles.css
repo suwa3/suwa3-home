@@ -39,14 +39,15 @@ li {
 .title {
   font-family: Helvetica, sans-serif;
   letter-spacing: 6px;
-  color: #6e5f44;
+  color: #184d88;
   font-size: 30px;
 }
 
 
 a {
     text-decoration: none;
-    color: #94c3f7;
+    color: #3aabd2;
+    font-size: 18px;
 }
 
 a:hover {
@@ -54,8 +55,9 @@ a:hover {
 }
 
 p {
-  color: #6e5f44;
+  color: #184d88;
   font-size: 14px;
+  margin-left: 30px;
 }
 
 /* .rabbit { */
@@ -71,22 +73,23 @@ p {
   letter-spacing: 2px;
   border-radius: 20px;
   font-family: Verdana, sans-serif;
-  background-color: #fff;
+  /* background-color: #fff; */
   position: absolute;
-  top: 18%;
-  left: 13%;
-  padding-top: 2%;
+  top: 20%;
+  left: 14%;
+  padding-top: 3%;
   padding-bottom: 2%;
-  padding-left: 4%;
-  padding-right: 8%;
+  padding-left: 6%;
+  padding-right: 14%;
   z-index: 20;
+  background: #ffffff9e;
 }
 
 .rabbit {
   /* border-radius: 50px; */
   position: absolute;
   top: 23%;
-  left: 20%;
+  left: 25%;
   /* height: 33%; */
   width: 30%;
   z-index: 30;
@@ -100,7 +103,7 @@ img.flower {
   border-radius: 20px;
   position: absolute;
   /* height: 80%; */
-  width: 65%;
+  width: 70%;
   top: 2%;
   left: 8%;
   margin-top: 2%;
