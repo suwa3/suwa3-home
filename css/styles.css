@@ -13,12 +13,9 @@ body {
   margin-bottom: 0px;
   margin-right: 0px;
   margin-left: 0px; */
-  margin: 30px;
+  margin: 10px;
 }
 header {
-  background-color: #fff;
-  text-align: right;
-  padding: 10px;
 }
 ul {
   margin: 0;
@@ -76,7 +73,7 @@ p {
   font-family: Verdana, sans-serif;
   background-color: #fff;
   position: absolute;
-  top: 26%;
+  top: 18%;
   left: 13%;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -88,8 +85,8 @@ p {
 .rabbit {
   /* border-radius: 50px; */
   position: absolute;
-  top: 28%;
-  left: 21%;
+  top: 23%;
+  left: 20%;
   /* height: 33%; */
   width: 30%;
   z-index: 30;
@@ -103,13 +100,14 @@ img.flower {
   border-radius: 20px;
   position: absolute;
   /* height: 80%; */
-  width: 70%;
-  top: 10%;
+  width: 65%;
+  top: 2%;
   left: 8%;
   margin-top: 2%;
   /* margin-bottom: 50%; */
-  margin-right: 10%;
+  margin-right: 5%;
   margin-left: 10%;
+  margin-bottom: 5%;
   text-align: center;
   z-index: 10;
 }
