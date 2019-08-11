@@ -618,10 +618,10 @@ header {
 	left: 0;
 }
 .csslider1 > .cs_arrowprev > label:after {
-	content: '\e800';
+	content: '\003C';
 }
 .csslider1 > .cs_arrownext > label:after {
-	content: '\e801';
+	content: '\003E';
 }
 .csslider1 > .cs_arrowprev > label:after,
 .csslider1 > .cs_arrownext > label:after {
