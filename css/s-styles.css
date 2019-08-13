@@ -16,7 +16,6 @@ body {
 
 header {
   padding:20px;
-  background: #fff;
   border-radius: 30px;
 }
 
@@ -1324,12 +1323,14 @@ only screen and (                max-resolution: 2dppx)  and (max-width: 480px) 
 /* sliderここまで */
 
 .title {
-  background-color: #fff;
   font-family: Helvetica, sans-serif;
   letter-spacing: 10px;
   color: #6e5f44;
   font-size: 60px;
   text-align: center;
+}
+
+.welcome {
 }
 
 .gnav {
@@ -1401,7 +1402,7 @@ p {
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  margin: 30px 0px;
+  margin: 0px 0px 30px;
 
 }
 
