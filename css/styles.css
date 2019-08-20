@@ -7,7 +7,8 @@
 }
 
 body {
-  background-color: #e9eff5;
+  background-image: url("../img/white-wall-wood.jpg");
+  /* background-color: #e9eff5; */
   margin: 10px;
 }
 
