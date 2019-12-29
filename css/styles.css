@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url("../img/white-wall-wood.jpg");
+ /* background-image: url("../img/white-wall-wood.jpg"); */
   /* background-color: #e9eff5; */
   margin: 10px;
 }
@@ -27,13 +27,13 @@ li {
 .title {
   font-family: Helvetica, sans-serif;
   letter-spacing: 6px;
-  color: #184d88;
+  color: #898989;
   font-size: 30px;
 }
 
 a {
     text-decoration: none;
-    color: #3aabd2;
+    color: #0D7E83;
     font-size: 18px;
 }
 
@@ -42,7 +42,7 @@ a:hover {
 }
 
 p {
-  color: #184d88;
+  color: #898989;
   font-size: 14px;
   margin-top: 10px;
   margin-left: 30px;
@@ -53,21 +53,21 @@ p {
   border-radius: 20px;
   font-family: Verdana, sans-serif;
   position: absolute;
-  top: 10%;
-  left: 14%;
+  top: 6%;
+  left: 21%;
   padding-top: 1%;
   /* padding-bottom: 1%; */
-  padding-left: 6%;
-  padding-right: 8%;
+  padding-left: 4%;
+  padding-right: 5%;
   z-index: 20;
   background: #ffffff9e;
 }
 
 .rabbit {
   position: absolute;
-  top: 23%;
-  left: 27%;
-  width: 30%;
+  top: 13%;
+  left: 30%;
+  width: 28%;
   z-index: 30;
 }
 
@@ -78,8 +78,8 @@ p {
 img.season {
   border-radius: 20px;
   position: absolute;
-  width: 70%;
-  top: 2%;
+  width: 46%;
+  top: 0%;
   left: 8%;
   margin-top: 2%;
   margin-right: 5%;
@@ -87,4 +87,7 @@ img.season {
   margin-bottom: 5%;
   text-align: center;
   z-index: 10;
+  background-color: black;
+  opacity: 0.4;
+  content: ' ';
 }
