@@ -7,9 +7,9 @@
 }
 
 body {
-  margin: 10px;
   background-image: url("../img/pink-olive.jpg");
   background-repeat: no-repeat;
+  background-size: 60% auto;
   background-position: center;
 }
 
@@ -50,34 +50,8 @@ p {
 }
 
 .link {
+  text-align: center;
+  margin-top: 35%;
   letter-spacing: 2px;
-  border-radius: 20px;
   font-family: Verdana, sans-serif;
-  position: absolute;
-  top: 6%;
-  left: 4%;
-  padding-top: 1%;
-  padding-left: 4%;
-  padding-right: 5%;
-  background: #ffffff7a;
-}
-
-.footer {
-  text-align: right;
-}
-
-
-img.season {
-  border-radius: 10px;
-  position: absolute;
-  width: 60%;
-  top: 0%;
-  left: 20%;
-  margin-top: 10%;
-  margin-right: 10%;
-  margin-left: 10%;
-  margin-bottom: 10%; 
-  display: inline-block;
-  background-color: black;
-  content: ' ';
 }
