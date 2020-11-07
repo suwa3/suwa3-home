@@ -8,16 +8,83 @@
 
 
 body {
-  background-image: url("../img/white-wall-wood.jpg");
-  /* background-color: #e9eff5; */
+  background-image: url("../img/pink-olive.jpg");
+  background-color: #f0d1d6;
   font-family: Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   margin: 10px;
   padding: 10px;
 }
 
 header {
-  padding:20px;
-  border-radius: 30px;
+}
+
+
+.title {
+    font-family: Helvetica, sans-serif;
+    margin-top: 50%;
+    letter-spacing: 10px;
+    color: #6e5f44;
+    font-size: 44px;
+    text-align: center;
+}
+
+.table {
+    margin: 5% 9% auto;
+    background-color: #f7f4f1;
+}
+
+
+p {
+    color: #6e5f44;
+    font-size: 35px;
+    /* background: #e9eff5; */
+    padding-top: 35px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 4% 2%;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 40px;
+    color: #6e5f44;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a span {
+    display: block;
+    padding-top: 10px;
+}
+
+a:hover {
+    color: blue;
+}
+
+.icon-hugo > img {
+    width: 8rem;
+}
+
+.icon-c > img {
+    width: 7rem;
+}
+
+.icon-Qiita > img {
+    width: 8rem;
+}
+
+.icon-usagi > img {
+    width: 11rem;
+}
+
+.icon-twitter > img {
+    width: 11rem;
 }
 
 /* sliderここから */
@@ -1323,19 +1390,9 @@ only screen and (                max-resolution: 2dppx)  and (max-width: 480px) 
 
 /* sliderここまで */
 
-.title {
-  font-family: Helvetica, sans-serif;
-  letter-spacing: 10px;
-  color: #6e5f44;
-  font-size: 60px;
-  text-align: center;
-}
-
-.welcome {
-}
 
 .gnav {
-    padding-bottom: 25px;
+    padding-bottom: 5px;
 }
 
 .nav-in {
@@ -1376,44 +1433,7 @@ li {
   padding: 0;
 }
 
-a {
-    text-decoration: none;
-    font-size: 40px;
-    color: #94c3f7;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-a span {
-    display: block;
-    padding-top: 10px;
-}
-
-a:hover {
-    color: blue;
-}
-
-p {
-  color: #6e5f44;
-  font-size: 35px;
-  /* background: #e9eff5; */
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: 0px 0px 30px;
-
-}
 
 .footer {
   text-align: right;
-}
-
-.rabbit {
-  width: 128px;
-  height: 128px;
-  float: right;
-  padding-right: 40px;
 }
